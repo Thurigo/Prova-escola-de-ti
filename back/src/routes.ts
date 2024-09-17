@@ -10,7 +10,6 @@ routes.get("/receitas/:id", convertIdToNumber, receitaController.getReceitaById)
 routes.put("/receitas/:id", convertIdToNumber, receitaController.updateReceita);
 routes.delete("/receitas/:id", convertIdToNumber, receitaController.deleteReceita);
 
-// Rotas para Ingredientes
 routes.post("/ingredientes", ingredienteController.createIngrediente);
 routes.get("/ingredientes", ingredienteController.getAllIngredientes);
 routes.get("/ingredientes/:id", convertIdToNumber, ingredienteController.getIngredienteById);
