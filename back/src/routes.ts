@@ -4,7 +4,7 @@ import ingredienteController from "./controllers/ingrediente.controller";
 import convertIdToNumber from "./middlewares/convertIdToNumber";
 
 const routes = Router();
-routes.post("/receitas", receitaController.createReceita);  // Acesse a função corretamente
+routes.post("/receitas", receitaController.createReceita);  
 routes.get("/receitas", receitaController.getAllReceitas);
 routes.get("/receitas/:id", convertIdToNumber, receitaController.getReceitaById);
 routes.put("/receitas/:id", convertIdToNumber, receitaController.updateReceita);
