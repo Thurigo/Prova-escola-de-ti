@@ -21,7 +21,7 @@ export default function CrudPage() {
 
   const fetchReceitas = async () => {
     const response = await axios.get('http://localhost:3001/receitas');
-    console.log(response.data);  // Verifique a resposta da API no console
+    console.log(response.data);
     setReceitas(Array.isArray(response.data) ? response.data : []);
   };
 
